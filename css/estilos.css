@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: ‘Titillium Web’, sans-serif;
+}
+
+body{
+    background-color: rgb(250, 234, 210);
+}
+
+header{
+    position:sticky;
+    top: 0px;
+    background-color: rgb(177, 250, 226);
+    color: burlywood;
+}
+
+.imagenes__footer{
+    margin: 4px;
+    padding: 4px;
+    width: 60px;
+    height: 60px;
+}
+
+footer{
+    background-color: rgb(153, 150, 150);
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: baseline;
+}
+
+.organizar__footer{
+    display: contents;
+    align-items: center;
+    justify-content: first baseline;
+    padding: 4px;
+    margin: 4px;
+}
+
+
+.color__fuente{
+    color: rgb(28, 250, 176);
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: flex-start;
+}
+
+
+li{
+    display: inline;
+    margin: 8px;
+    padding: 8px;
+}
+
+ul li {
+    display: inline;
+}
+
+
+.foto__fabrica{
+    width: 45%;
+    height: 45%;
+}
+
+.boton__local{
+    width: 10%;
+    height: 10%;
+}
+
+.foto__logo{
+    display: inline;
+    position: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+}
+
+
+.tamaño__input{
+    display: block;
+    padding: 15px;
+    margin: 15px;
+}
+
+
+.organizar__h3{
+    color: rgb(41, 23, 1);
+}
+
+.fotos__nosotros{
+    display: inline;
+    height: 315px;
+    width: 490px;
+}
+
+.alinear__titulos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: crimson;
+}
+
+
+.foto__historia{
+    height: 320px;
+    width: 320px;
+}
+
+
+.configuracion__productos{
+    margin: 12px;
+    padding: 12px;
+    border: 4px solid rgb(255, 202, 202);
+    border-style: double;
+}
+
+.foto__tips{
+    height: 320px;
+    width: 320px;
+}
+
+.fotos__historiatips{
+    display: inline;
+    margin: 12px;
+    padding: 12px;
+    
+}
