@@ -7,14 +7,41 @@
 body{
     background-color: rgb(250, 234, 210);
 }
-
+/* estilo navegador */
 header{
     position:sticky;
     top: 0px;
     background-color: rgb(177, 250, 226);
     color: burlywood;
 }
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: flex-start;
+}
 
+
+li{
+    display: inline;
+    margin: 8px;
+    padding: 8px;
+}
+
+.foto__fabrica{
+    width: 45%;
+    height: 45%;
+}
+
+.boton__local{
+    display: flex;
+    width: 10%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* estilo footer */
 .imagenes__footer{
     margin: 4px;
     padding: 4px;
@@ -48,42 +75,13 @@ footer{
     color: rgb(28, 250, 176);
 }
 
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: flex-start;
-}
-
-
-li{
-    display: inline;
-    margin: 8px;
-    padding: 8px;
-}
-
-ul li {
-    display: inline;
-}
-
-
-.foto__fabrica{
-    width: 45%;
-    height: 45%;
-}
 
 .grid__item{
     display: flex;
     flex-direction: row;
 }
 
-.boton__local{
-    display: flex;
-    width: 10%;
-    height: 10%;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .foto__logo{
     display: inline;
@@ -120,10 +118,13 @@ ul li {
 }
 
 
-.foto__historia{
+.foto__historiaytips{
     height: 320px;
     width: 320px;
     border: 2px solid rgb(218, 195, 202);
+    display: inline;
+    margin: 12px;
+    padding: 12px;
 
 }
 
@@ -135,18 +136,9 @@ ul li {
     border-style: double;
 }
 
-.foto__tips{
-    height: 320px;
-    width: 320px;
-    border: 2px solid rgb(218, 195, 202);
-}
 
-.fotos__historiatips{
-    display: inline;
-    margin: 12px;
-    padding: 12px;
-}
 
+/* grid index */
 .grid__agregado{
     display: grid;
     grid-template-areas:"1 1 1"
@@ -163,6 +155,7 @@ ul li {
     grid-area: 2;
 }
 
+/* grid pagian historia */
 .grid__historia{
     display: grid;
     grid-template-areas:"1 1"
