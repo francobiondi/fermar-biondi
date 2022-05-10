@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: ‘Titillium Web’, sans-serif;
+    font-family:‘Titillium Web’, sans-serif;
 }
 
 body{
@@ -23,10 +23,16 @@ header{
 }
 
 footer{
+    position: absolute;
+    width: 100%;
+}
+
+.footer{
     background-color: rgb(153, 150, 150);
-    display: inline-flex;
+    display:flex;
     align-items: stretch;
     justify-content: baseline;
+    flex-direction: row;
 }
 
 .organizar__footer{
@@ -66,9 +72,17 @@ ul li {
     height: 45%;
 }
 
+.grid__item{
+    display: flex;
+    flex-direction: row;
+}
+
 .boton__local{
+    display: flex;
     width: 10%;
     height: 10%;
+    justify-content: center;
+    align-items: center;
 }
 
 .foto__logo{
@@ -109,6 +123,8 @@ ul li {
 .foto__historia{
     height: 320px;
     width: 320px;
+    border: 2px solid rgb(218, 195, 202);
+
 }
 
 
@@ -122,11 +138,93 @@ ul li {
 .foto__tips{
     height: 320px;
     width: 320px;
+    border: 2px solid rgb(218, 195, 202);
 }
 
 .fotos__historiatips{
     display: inline;
     margin: 12px;
     padding: 12px;
+}
+
+.grid__agregado{
+    display: grid;
+    grid-template-areas:"1 1 1"
+                        "2 2 2";
+    grid-template-columns:1,4fr 0,20fr 1,4fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid__div1{
+    grid-area: 1;
+}
+
+.grid__div2{
+    grid-area: 2;
+}
+
+.grid__historia{
+    display: grid;
+    grid-template-areas:"1 1"
+                        "2 2"
+                        "3 3";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid__divhistoria1{
+    grid-area: 1;
+}
+
+.grid__divhistoria2{
+    grid-area: 2;
+}
+
+.grid__divhistoria3{
+    grid-area: 3;
+}
+
+
+@media(min-width: 541px) and (max-width: 720px){
+/* responsive */
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
     
+
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 540px){
+/* responsive */
+.header{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header__ul{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
 }
