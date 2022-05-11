@@ -75,6 +75,12 @@ footer{
     color: rgb(28, 250, 176);
 }
 
+/* Estilos Main */
+
+.animaciones__titulos{
+    transform: rotate(25deg);
+}
+
 
 .grid__item{
     display: flex;
