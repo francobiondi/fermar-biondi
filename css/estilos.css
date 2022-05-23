@@ -38,7 +38,7 @@ li {
 .foto__fabrica {
   width: 400px;
   height: 400px;
-  margin: 2px; }
+  margin: 3px; }
 
 /* main */
 form {
@@ -103,11 +103,6 @@ footer {
 
 .organizar__h3 {
   color: #291701; }
-
-.fotos__nosotros {
-  display: inline;
-  height: 315px;
-  width: 490px; }
 
 .alinear__titulos {
   display: flex;
@@ -176,15 +171,6 @@ footer {
   .main {
     display: flex;
     flex-direction: column; }
-  .grid__item {
-    display: flex;
-    flex-direction: column; }
-  .grid__agregado {
-    grid-template-areas: "1" "3" "4" "2" "2" "2";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr; }
-  .grid__historia {
-    grid-template-areas: "1" "2" "3"; }
   .footer {
     display: flex;
     flex-direction: column;
@@ -202,10 +188,6 @@ footer {
   .main {
     display: flex;
     flex-direction: column; }
-  .grid__agregado {
-    grid-template-areas: "1" "2"; }
-  .grid__historia {
-    grid-template-areas: "1" "2" "3"; }
   .footer {
     display: flex;
     flex-direction: column;
