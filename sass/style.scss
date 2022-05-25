@@ -15,61 +15,109 @@ header{
     top: 0px;
     background-color: rgb(177, 250, 226);
     color: burlywood;
+    .color__menu{
+        color: black;
+    }
+    .bg-lightblue{
+        background-color: rgb(189, 247, 228);
+    }
+    .nav-link{
+        color: rgb(245, 174, 81);
+    }
 }
 ul{
     display: flex;
     flex-direction: row;
     justify-content: right;
     align-items: flex-start;
-}
-
-
-li{
-    display: inline;
-    margin: 8px;
-    padding: 8px;
-}
-
-.color__menu{
-    color: black;
-}
-
-.bg-lightblue{
-    background-color: rgb(189, 247, 228);
-}
-
-.nav-link{
-    color: rgb(245, 174, 81);
-}
-
-.foto__fabrica{
-    width: 400px;
-    height: 400px;
-    margin: 3px;
+    li{
+        display: inline;
+        margin: 8px;
+        padding: 8px;
+    }
 }
 
 
 /* main */
+.main{
+    .alinear__titulos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: crimson;
+    }
+    .animaciones__titulos:hover{
+        transform:scale(1.1);
+        transition: 1s;
+    }
+    .configuracion__productos{
+        margin: 12px;
+        padding: 12px;
+        border: 4px solid rgb(255, 202, 202);
+        border-style: double;
+    }
+    .foto__fabrica{
+        width: 400px;
+        height: 400px;
+        margin: 3px;
+    }
+    .foto__historiaytips{
+    height: 320px;
+    width: 320px;
+    border: 2px solid rgb(218, 195, 202);
+    display: inline;
+    margin: 12px;
+    padding: 12px;
+}
+}
+
 form{
     display: flex;
     align-items: center;
     justify-items: flex-start;
+    flex-direction: column;
+    .tamaño__input{
+        display: block;
+        padding: 15px;
+        margin: 15px;
+    }
+    .organizar__sugerencias{
+        color: rgb(41, 23, 1);
+    }
+    .form{
+        flex-direction: column;
+    }
 }
 
 
 /* estilo footer */
-.imagenes__footer{
-    margin: 4px;
-    padding: 4px;
-    width: 60px;
-    height: 60px;
-}
 
 footer{
     position:relative;
     width: 99%;
+    .imagenes__footer{
+        margin: 4px;
+        padding: 4px;
+        width: 60px;
+        height: 60px;
+    }
+    .organizar__footer{
+        display: contents;
+        align-items: center;
+        justify-content: first baseline;
+        padding: 2px;
+        margin: 2px;
+    }
+    .color__fuente{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(206, 228, 10);
+    }
+    
 }
 
+/* lo dejo aparte, porque si lo uno con el footer de arriba se rompe la pagina */
 .footer{
     background-color: rgb(153, 150, 150);
     display:flex;
@@ -77,89 +125,10 @@ footer{
     flex-direction: row;
 }
 
-.organizar__footer{
-    display: contents;
-    align-items: center;
-    justify-content: first baseline;
-    padding: 2px;
-    margin: 2px;
-}
 
 
-.color__fuente{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(28, 250, 176);
-
-}
 
 /* Estilos Main */
-
-.animaciones__titulos:hover{
-    transform:scale(1.1);
-    transition: 1s;
-}
-
-.main__media{
-    display: flex;
-    flex-direction:column ;
-}
-
-.form{
-    flex-direction: column;
-}
-
-
-
-
-.foto__logo{
-    display: inline;
-    position: 0px;
-    margin: 0px;
-    padding: 0px;
-    width: 40px;
-    height: 40px;
-}
-
-
-.tamaño__input{
-    display: block;
-    padding: 15px;
-    margin: 15px;
-}
-
-
-.organizar__h3{
-    color: rgb(41, 23, 1);
-}
-
-
-.alinear__titulos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: crimson;
-}
-
-
-.foto__historiaytips{
-    height: 320px;
-    width: 320px;
-    border: 2px solid rgb(218, 195, 202);
-    display: inline;
-    margin: 12px;
-    padding: 12px;
-
-}
-
-
-.configuracion__productos{
-    margin: 12px;
-    padding: 12px;
-    border: 4px solid rgb(255, 202, 202);
-    border-style: double;
-}
 
 
 

@@ -14,103 +14,46 @@ header {
   top: 0px;
   background-color: #b1fae2;
   color: burlywood; }
+  header .color__menu {
+    color: black; }
+  header .bg-lightblue {
+    background-color: #bdf7e4; }
+  header .nav-link {
+    color: #f5ae51; }
 
 ul {
   display: flex;
   flex-direction: row;
   justify-content: right;
   align-items: flex-start; }
-
-li {
-  display: inline;
-  margin: 8px;
-  padding: 8px; }
-
-.color__menu {
-  color: black; }
-
-.bg-lightblue {
-  background-color: #bdf7e4; }
-
-.nav-link {
-  color: #f5ae51; }
-
-.foto__fabrica {
-  width: 400px;
-  height: 400px;
-  margin: 3px; }
+  ul li {
+    display: inline;
+    margin: 8px;
+    padding: 8px; }
 
 /* main */
-form {
-  display: flex;
-  align-items: center;
-  justify-items: flex-start; }
-
-/* estilo footer */
-.imagenes__footer {
-  margin: 4px;
-  padding: 4px;
-  width: 60px;
-  height: 60px; }
-
-footer {
-  position: relative;
-  width: 99%; }
-
-.footer {
-  background-color: #999696;
-  display: flex;
-  align-items: stretch;
-  flex-direction: row; }
-
-.organizar__footer {
-  display: contents;
-  align-items: center;
-  justify-content: first baseline;
-  padding: 2px;
-  margin: 2px; }
-
-.color__fuente {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #1cfab0; }
-
-/* Estilos Main */
-.animaciones__titulos:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.main__media {
-  display: flex;
-  flex-direction: column; }
-
-.form {
-  flex-direction: column; }
-
-.foto__logo {
-  display: inline;
-  position: 0px;
-  margin: 0px;
-  padding: 0px;
-  width: 40px;
-  height: 40px; }
-
-.tamaño__input {
-  display: block;
-  padding: 15px;
-  margin: 15px; }
-
-.organizar__h3 {
-  color: #291701; }
-
-.alinear__titulos {
+.main .alinear__titulos {
   display: flex;
   align-items: center;
   justify-content: center;
   color: crimson; }
 
-.foto__historiaytips {
+.main .animaciones__titulos:hover {
+  transform: scale(1.1);
+  transition: 1s; }
+
+.main .configuracion__productos {
+  margin: 12px;
+  padding: 12px;
+  border: 4px solid #ffcaca;
+  border-style: double; }
+
+.main .foto__fabrica {
+  width: 400px;
+  height: 400px;
+  margin: 3px; }
+
+.main .foto__historiaytips {
   height: 320px;
   width: 320px;
   border: 2px solid #dac3ca;
@@ -118,12 +61,49 @@ footer {
   margin: 12px;
   padding: 12px; }
 
-.configuracion__productos {
-  margin: 12px;
-  padding: 12px;
-  border: 4px solid #ffcaca;
-  border-style: double; }
+form {
+  display: flex;
+  align-items: center;
+  justify-items: flex-start;
+  flex-direction: column; }
+  form .tamaño__input {
+    display: block;
+    padding: 15px;
+    margin: 15px; }
+  form .organizar__sugerencias {
+    color: #291701; }
+  form .form {
+    flex-direction: column; }
 
+/* estilo footer */
+footer {
+  position: relative;
+  width: 99%; }
+  footer .imagenes__footer {
+    margin: 4px;
+    padding: 4px;
+    width: 60px;
+    height: 60px; }
+  footer .organizar__footer {
+    display: contents;
+    align-items: center;
+    justify-content: first baseline;
+    padding: 2px;
+    margin: 2px; }
+  footer .color__fuente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cee40a; }
+
+/* lo dejo aparte, porque si lo uno con el footer de arriba se rompe la pagina */
+.footer {
+  background-color: #999696;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row; }
+
+/* Estilos Main */
 /* grid index */
 .grid__agregado {
   display: grid;
