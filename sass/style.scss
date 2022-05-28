@@ -42,6 +42,7 @@ ul{
         align-items: center;
         justify-content: center;
         color: crimson;
+        margin-top: 1rem;
     }
     .animaciones__titulos:hover{
         transform:scale(1.1);
@@ -65,7 +66,16 @@ ul{
     display: inline;
     margin: 12px;
     padding: 12px;
-}
+    }
+    .alinear__p{
+        align-self: center;
+    }
+    .texto__contactanos{
+        color: rgb(24, 71, 2);
+        height: 1rem;
+
+    }
+
 }
 
 form{
@@ -116,7 +126,7 @@ footer{
 
 /* lo dejo aparte, porque si lo uno con el footer de arriba se rompe la pagina */
 .footer{
-    background-color: rgb(153, 150, 150);
+    background-color: rgb(58, 40, 40);
     display:flex;
     align-items: stretch;
     flex-direction: row;
@@ -182,12 +192,8 @@ footer{
 }
 
 
-@media(min-width: 541px) and (max-width: 720px){
+@media(max-width: 720px){
 /* responsive */
-    .header{
-        display: flex;
-        flex-direction: column;
-    }
 
 
     .main{
@@ -204,29 +210,4 @@ footer{
     }
 }
 
-@media(min-width: 320px) and (max-width: 540px){
-/* responsive */
-.header{
-    display: flex;
-    flex-direction: column;
 
-}
-
-.header__ul{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.main{
-    display: flex;
-    flex-direction: column;
-}
-
-.footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-}

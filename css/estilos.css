@@ -34,7 +34,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: crimson; }
+  color: crimson;
+  margin-top: 1rem; }
 
 .main .animaciones__titulos:hover {
   transform: scale(1.1);
@@ -58,6 +59,13 @@ ul {
   display: inline;
   margin: 12px;
   padding: 12px; }
+
+.main .alinear__p {
+  align-self: center; }
+
+.main .texto__contactanos {
+  color: #184702;
+  height: 1rem; }
 
 form {
   display: flex;
@@ -96,7 +104,7 @@ footer {
 
 /* lo dejo aparte, porque si lo uno con el footer de arriba se rompe la pagina */
 .footer {
-  background-color: #999696;
+  background-color: #3a2828;
   display: flex;
   align-items: stretch;
   flex-direction: row; }
@@ -141,11 +149,8 @@ footer {
 .grid__divhistoria3 {
   grid-area: 3; }
 
-@media (min-width: 541px) and (max-width: 720px) {
+@media (max-width: 720px) {
   /* responsive */
-  .header {
-    display: flex;
-    flex-direction: column; }
   .main {
     display: flex;
     flex-direction: column; }
@@ -154,20 +159,3 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center; } }
-
-@media (min-width: 320px) and (max-width: 540px) {
-  /* responsive */
-  .header {
-    display: flex;
-    flex-direction: column; }
-  .header__ul {
-    display: flex;
-    flex-direction: column; }
-  .main {
-    display: flex;
-    flex-direction: column; }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; } }
