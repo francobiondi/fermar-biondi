@@ -48,12 +48,6 @@ ul{
         transform:scale(1.1);
         transition: 1s;
     }
-    .configuracion__productos{
-        margin: 12px;
-        padding: 12px;
-        border: 4px solid rgb(255, 202, 202);
-        border-style: double;
-    }
     .foto__fabrica{
         width: 400px;
         height: 400px;
@@ -210,4 +204,13 @@ footer{
     }
 }
 
+$productos:(key1:tostadas-sin-sal, key2:tostadas-salvado, key3:tostadas-multicereal, key4:tostadas-mesa, key5:tostadas-dulces, key6:tostadas-dulce-diet, key7:fajitas-blancas, key8:fajitas-chia, key9:fajitas-lino, key10:fajitas-lino-sinsal, key11:fajitas-multicereal, key12:fajitas-salvado, key13: fajitas-sesamo, key14:bizcochos-salvado-lino, key15:bizcochos-salvado-lino, key16:bizcochos-sin-sal, key17:grisines-blancos, key18:grisines-salvados );
 
+@each $key, $producto in $productos{
+    .#{$key}-card {
+        margin: 12px;
+        padding: 12px;
+        border: 4px solid rgb(255, 202, 202);
+        border-style: double;
+    }
+}
