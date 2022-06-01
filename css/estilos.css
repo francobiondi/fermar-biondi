@@ -100,7 +100,7 @@ footer {
 .footer {
   background-color: #3a2828;
   display: flex;
-  align-items: stretch;
+  align-items: center;
   flex-direction: row; }
 
 /* Estilos Main */
