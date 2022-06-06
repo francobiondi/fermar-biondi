@@ -61,15 +61,6 @@ ul{
     margin: 12px;
     padding: 12px;
     }
-    .alinear__p{
-        align-self: center;
-    }
-    .texto__contactanos{
-        color: rgb(24, 71, 2);
-        height: 1rem;
-
-    }
-
 }
 
 form{
@@ -83,10 +74,29 @@ form{
         margin: 15px;
     }
     .organizar__sugerencias{
-        color: rgb(41, 23, 1);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
     }
     .form{
         flex-direction: column;
+    }
+    .configuracion__botones{
+        padding: 4px;
+        margin: 2px;
+    }
+    .tamaño__foto{
+        height: 70px;
+        width: 70px;
+        padding: 4px;
+        margin: 4px;
+    }
+    .alinear__p{
+        align-self: center;
+    }
+    .texto__contactanos{
+        color: rgb(0, 0, 0);
+        height: 1rem;
+        font-size: 16px;
     }
 }
 
@@ -126,64 +136,6 @@ footer{
     flex-direction: row;
 }
 
-
-
-
-/* Estilos Main */
-
-
-
-/* grid index */
-.grid__agregado{
-    display: grid;
-    grid-template-areas:"uno tres cuatro"
-                        "dos dos dos";
-    grid-template-columns:1,4fr 0,20fr 1,4fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.grid__div1{
-    grid-area: uno;
-}
-
-.grid__div2{
-    grid-area: dos;
-}
-
-.grid__div3{
-    grid-area: tres;
-}
-
-.grid__div4{
-    grid-area: cuatro;
-}
-
-.grid__item{
-    display: flex;
-    flex-direction:column;
-}
-
-/* grid pagian historia */
-.grid__historia{
-    display: grid;
-    grid-template-areas:"1 1"
-                        "2 2"
-                        "3 3";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.grid__divhistoria1{
-    grid-area: 1;
-}
-
-.grid__divhistoria2{
-    grid-area: 2;
-}
-
-.grid__divhistoria3{
-    grid-area: 3;
-}
 
 
 @media(max-width: 720px){

@@ -19,7 +19,7 @@
         <nav class="navbar-dark navbar-expand-lg bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../recursos/foto-logo-fermar.jpg" alt="foto logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <img src="../recursos/foto-logo-fermar.jpg" alt="foto logo" width="80" height="80" class="d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -52,23 +52,25 @@
                 <h1 class="alinear__titulos animaciones__titulos">Contactanos</h1>
                 <form class="form">
                     <div class="tamaño__input">
-                        <label for="email">Mail</label>
+                        <label class="organizar__sugerencias" for="email">Mail</label>
+                    <div>
                         <input it="email" type="email" placeholder="ejemplo123@gmail.com"/>
+                    </div>
                     </div>
                     <div>
                         <p class="organizar__sugerencias">Sugerencias</p>
                         <textarea></textarea>
                     </div>
-                    <div class="tamaño__input">
-                        <label for="enviar"></label>
-                        <input type="submit" value="enviar"/>
+                    <div class="btn-group configuracion__botones" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="Enviar" class="btn-check" id="btncheck1" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck1">Enviar</label>
                     </div>
-                    <div class="tamaño__input">
-                        <label for="limpiar"></label>
-                        <input type="reset" value="limpiar"/>
+                    <div  class="btn-group configuracion__botones" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="Cancelar" class="btn-check" id="btncheck2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck2">Cancelar</label>
                     </div>
-                    <div>
                         <p class="texto__contactanos">Agradecemos mucho su colaboracion, sus sugerencias seran tomadas en cuenta para mejorar nuestro servicio.</p>
+                        <img src="../recursos/emoji-smile.svg" class="tamaño__foto">
                     </div>
                 </form>
             </section>
