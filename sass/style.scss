@@ -21,6 +21,10 @@ header{
     .nav-link{
         color: rgb(245, 174, 81);
     }
+    .tamaño__imgnav{
+    width: 80px;
+    height: 80px;
+    }
 }
 ul{
     display: flex;
@@ -60,6 +64,10 @@ ul{
     display: inline;
     margin: 12px;
     padding: 12px;
+    }
+    .tamaño__iframe{
+        width: 560px;
+        height: 315px;
     }
 }
 
@@ -136,6 +144,16 @@ footer{
     flex-direction: row;
 }
 
+$productos:(key1:tostadas-sin-sal, key2:tostadas-salvado, key3:tostadas-multicereal, key4:tostadas-mesa, key5:tostadas-dulces, key6:tostadas-dulce-diet, key7:fajitas-blancas, key8:fajitas-chia, key9:fajitas-lino, key10:fajitas-lino-sinsal, key11:fajitas-multicereal, key12:fajitas-salvado, key13: fajitas-sesamo, key14:bizcochos-salvado-lino, key15:bizcochos-salvado-lino, key16:bizcochos-sin-sal, key17:grisines-blancos, key18:grisines-salvados );
+
+@each $key, $producto in $productos{
+    .#{$key}-card {
+        margin: 12px;
+        padding: 12px;
+        border: 4px solid rgb(255, 202, 202);
+        border-style: double;
+    }
+}
 
 
 @media(max-width: 720px){
@@ -153,16 +171,5 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-}
-
-$productos:(key1:tostadas-sin-sal, key2:tostadas-salvado, key3:tostadas-multicereal, key4:tostadas-mesa, key5:tostadas-dulces, key6:tostadas-dulce-diet, key7:fajitas-blancas, key8:fajitas-chia, key9:fajitas-lino, key10:fajitas-lino-sinsal, key11:fajitas-multicereal, key12:fajitas-salvado, key13: fajitas-sesamo, key14:bizcochos-salvado-lino, key15:bizcochos-salvado-lino, key16:bizcochos-sin-sal, key17:grisines-blancos, key18:grisines-salvados );
-
-@each $key, $producto in $productos{
-    .#{$key}-card {
-        margin: 12px;
-        padding: 12px;
-        border: 4px solid rgb(255, 202, 202);
-        border-style: double;
     }
 }
