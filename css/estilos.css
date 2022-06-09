@@ -15,7 +15,7 @@ header {
   background-color: #b1fae2;
   color: burlywood; }
   header .color__menu {
-    color: black; }
+    color: color black; }
   header .nav-link {
     color: #f5ae51; }
   header .tamaño__imgnav {
@@ -71,7 +71,7 @@ form {
     padding: 15px;
     margin: 15px; }
   form .organizar__sugerencias {
-    color: black;
+    color: color black;
     font-size: 20px; }
   form .form {
     flex-direction: column; }
@@ -86,7 +86,7 @@ form {
   form .alinear__p {
     align-self: center; }
   form .texto__contactanos {
-    color: black;
+    color: color black;
     height: 1rem;
     font-size: 16px; }
 

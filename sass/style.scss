@@ -16,7 +16,7 @@ header{
     background-color: rgb(177, 250, 226);
     color:$background__principal;
     .color__menu{
-        color: black;
+        color: $color__negro;
     }
     .nav-link{
         color: rgb(245, 174, 81);
@@ -82,7 +82,7 @@ form{
         margin: 15px;
     }
     .organizar__sugerencias{
-        color: rgb(0, 0, 0);
+        color: $color__negro;
         font-size: 20px;
     }
     .form{
@@ -102,7 +102,7 @@ form{
         align-self: center;
     }
     .texto__contactanos{
-        color: rgb(0, 0, 0);
+        color: $color__negro;
         height: 1rem;
         font-size: 16px;
     }
