@@ -19,8 +19,12 @@ header {
   header .nav-link {
     color: #f5ae51; }
   header .tamaño__imgnav {
-    width: 80px;
-    height: 80px; }
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 4px; }
+  header .containerOrder {
+    display: flex;
+    flex-direction: row; }
 
 ul {
   display: flex;
@@ -45,17 +49,15 @@ ul {
   transition: 1s; }
 
 .main .foto__fabrica {
-  width: 400px;
-  height: 400px;
+  width: 8.5rem;
+  height: 18rem;
   margin: 3px; }
 
 .main .foto__historiaytips {
   height: 320px;
   width: 320px;
   border: 2px solid #dac3ca;
-  display: inline;
-  margin: 12px;
-  padding: 12px; }
+  margin: 3px; }
 
 .main .tamaño__iframe {
   width: 560px;
@@ -77,10 +79,12 @@ form {
     flex-direction: column; }
   form .configuracion__botones {
     padding: 4px;
-    margin: 2px; }
+    margin: 2px;
+    background-color: #ffe87f;
+    border: 1px solid #ceaa74; }
   form .tamaño__foto {
-    height: 70px;
-    width: 70px;
+    height: 3.5rem;
+    width: 3.5rem;
     padding: 4px;
     margin: 4px; }
   form .alinear__p {
@@ -89,6 +93,8 @@ form {
     color: color black;
     height: 1rem;
     font-size: 16px; }
+  form .TituloCentrado {
+    text-align: center; }
 
 /* estilo footer */
 footer {
@@ -97,10 +103,11 @@ footer {
   footer .imagenes__footer {
     margin: 4px;
     padding: 4px;
-    width: 60px;
-    height: 60px; }
+    width: 3rem;
+    height: 3rem; }
   footer .organizar__footer {
-    display: contents;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: first baseline;
     padding: 2px;
@@ -109,118 +116,157 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #cee40a; }
+    color: #cee40a;
+    margin: 4px;
+    padding: 2px; }
 
 /* lo dejo aparte, porque si lo uno con el footer de arriba se rompe la pagina */
 .footer {
   background-color: #3a2828;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-direction: row; }
+  justify-content: center; }
 
 .key1-card {
+  width: 9.5rem;
+  height: 19rem;
   margin: 12px;
   padding: 12px;
   border: 4px solid #ffcaca;
   border-style: double; }
 
 .key2-card {
+  width: 9.5rem;
+  height: 19rem;
   margin: 12px;
   padding: 12px;
   border: 4px solid #ffcaca;
   border-style: double; }
 
 .key3-card {
+  width: 9.5rem;
+  height: 19rem;
   margin: 12px;
   padding: 12px;
   border: 4px solid #ffcaca;
   border-style: double; }
 
 .key4-card {
+  width: 9.5rem;
+  height: 19rem;
   margin: 12px;
   padding: 12px;
   border: 4px solid #ffcaca;
   border-style: double; }
 
 .key5-card {
+  width: 9.5rem;
+  height: 19rem;
   margin: 12px;
   padding: 12px;
   border: 4px solid #ffcaca;
   border-style: double; }
 
 .key6-card {
+  width: 9.5rem;
+  height: 19rem;
   margin: 12px;
   padding: 12px;
   border: 4px solid #ffcaca;
   border-style: double; }
 
 .key7-card {
+  width: 9.5rem;
+  height: 19rem;
   margin: 12px;
   padding: 12px;
   border: 4px solid #ffcaca;
   border-style: double; }
 
 .key8-card {
+  width: 9.5rem;
+  height: 19rem;
   margin: 12px;
   padding: 12px;
   border: 4px solid #ffcaca;
   border-style: double; }
 
 .key9-card {
+  width: 9.5rem;
+  height: 19rem;
   margin: 12px;
   padding: 12px;
   border: 4px solid #ffcaca;
   border-style: double; }
 
 .key10-card {
+  width: 9.5rem;
+  height: 19rem;
   margin: 12px;
   padding: 12px;
   border: 4px solid #ffcaca;
   border-style: double; }
 
 .key11-card {
+  width: 9.5rem;
+  height: 19rem;
   margin: 12px;
   padding: 12px;
   border: 4px solid #ffcaca;
   border-style: double; }
 
 .key12-card {
+  width: 9.5rem;
+  height: 19rem;
   margin: 12px;
   padding: 12px;
   border: 4px solid #ffcaca;
   border-style: double; }
 
 .key13-card {
+  width: 9.5rem;
+  height: 19rem;
   margin: 12px;
   padding: 12px;
   border: 4px solid #ffcaca;
   border-style: double; }
 
 .key14-card {
+  width: 9.5rem;
+  height: 19rem;
   margin: 12px;
   padding: 12px;
   border: 4px solid #ffcaca;
   border-style: double; }
 
 .key15-card {
+  width: 9.5rem;
+  height: 19rem;
   margin: 12px;
   padding: 12px;
   border: 4px solid #ffcaca;
   border-style: double; }
 
 .key16-card {
+  width: 9.5rem;
+  height: 19rem;
   margin: 12px;
   padding: 12px;
   border: 4px solid #ffcaca;
   border-style: double; }
 
 .key17-card {
+  width: 9.5rem;
+  height: 19rem;
   margin: 12px;
   padding: 12px;
   border: 4px solid #ffcaca;
   border-style: double; }
 
 .key18-card {
+  width: 9.5rem;
+  height: 19rem;
   margin: 12px;
   padding: 12px;
   border: 4px solid #ffcaca;
@@ -235,4 +281,17 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; } }
+    justify-content: center; }
+  footer .organizar__footer {
+    display: flex;
+    flex-direction: column; } }
+
+@media (min-width: 721px) and (max-width: 1000px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  footer .organizar__footer {
+    display: flex;
+    flex-direction: row; } }

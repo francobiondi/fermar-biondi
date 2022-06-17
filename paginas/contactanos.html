@@ -17,7 +17,7 @@
 <body>
     <header class="header">
         <nav class="navbar-dark navbar-expand-lg bg-dark">
-            <div class="container-fluid">
+            <div class="containerOrder">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../recursos/foto-logo-fermar.jpg" alt="foto logo" class="d-inline-block align-text-top tamaño__imgnav">
                 </a>
@@ -51,25 +51,22 @@
             <section class="main__media">
                 <h1 class="alinear__titulos animaciones__titulos">Contactanos</h1>
                 <form class="form">
-                    <div class="tamaño__input">
+                    <div class="TituloCentrado tamaño__input">
                         <label class="organizar__sugerencias" for="email">Mail</label>
                     <div>
                         <input it="email" type="email" placeholder="ejemplo123@gmail.com"/>
                     </div>
-                    </div>
                     <div>
-                        <p class="organizar__sugerencias">Sugerencias</p>
+                        <p class="TituloCentrado organizar__sugerencias">Sugerencias</p>
                         <textarea></textarea>
                     </div>
-                    <div class="btn-group configuracion__botones" role="group" aria-label="Basic checkbox toggle button group">
-                        <input type="Enviar" class="btn-check" id="btncheck1" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheck1">Enviar</label>
-                    </div>
-                    <div  class="btn-group configuracion__botones" role="group" aria-label="Basic checkbox toggle button group">
-                        <input type="Cancelar" class="btn-check" id="btncheck2" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheck2">Cancelar</label>
+                    <div>
+                        <input type="submit" name="Enviar" value="Enviar" class="configuracion__botones">
+                        <input type="reset" name="Reset" value="Cancelar" class="configuracion__botones">
                     </div>
                         <p class="texto__contactanos">Agradecemos mucho su colaboracion, sus sugerencias seran tomadas en cuenta para mejorar nuestro servicio.</p>
+                    </div>
+                    <div>
                         <img src="../recursos/emoji-smile.svg" class="tamaño__foto">
                     </div>
                 </form>
@@ -77,23 +74,29 @@
         </div>
     </main>
     <footer>
-        <div class="container footer">
-            <div class="row organizar__footer">
+        <div class="containerOrder footer">
+            <div class="col organizar__footer">
                 <img class="col imagenes__footer" src="../recursos/foto-location-svg.svg" alt="foto logo ubicacion"/>
                 <p class="col color__fuente">Calle Pública 5170 B° - Los Boulevares - Córdoba</p>
                 <img class="col imagenes__footer" src="../recursos/foto-clock-svg.svg" alt="foto logo reloj"/>
                 <p class="col color__fuente">Lunes a Viernes de 8:00 a 18:00 Hs.</p>
                 <img class="col imagenes__footer" src="../recursos/foto-phone-svg.svg" alt="foto logo telefeno"/>
-                <p class="col color__fuente">(03543) 405372 / 73</p>
+                <p class="col color__fuente">(03543) 405372 / 73  </p>
                 <p class="col color__fuente"> +549 351 2520078</p>
             </div>
-            <div class="row organizar__footer">
-                <img class="col imagenes__footer" src="../recursos/foto-logo-facebook.svg" alt="foto logo facebook"/>
+            <div class="col organizar__footer">
+                <a href="https://www.facebook.com/FermarOficial/" target="_blank">
+                    <img class="row imagenes__footer" src="../recursos/foto-logo-facebook.svg" alt="foto logo facebook"/>
+                </a>
                 <p class="col color__fuente">FermarOficial</p>
-                <img class="col imagenes__footer" src="../recursos/foto-logo-instagram-svg.png" alt="foto logo instagram"/>
+                <a href="https://www.instagram.com/fermaroficial/?hl=es" target="_blank">
+                    <img class="row imagenes__footer" src="../recursos/foto-logo-instagram-svg.png" alt="foto logo instagram"/>
+                </a>
                 <p class="col color__fuente">fermaroficial</p>
-                <img class="col imagenes__footer" src="../recursos/foto-logo-twitter-svg.svg" alt=" foto logo twitter"/>
-                <p class="col color__fuente">/Fermar</p>
+                <a href="https://twitter.com/tostadasfermar" target="_blank">
+                    <img class="row imagenes__footer" src="../recursos/foto-logo-twitter-svg.svg" alt=" foto logo twitter"/>
+                </a>
+                <p class="col color__fuente">Fermar</p>
             </div>
         </div>
     </footer>

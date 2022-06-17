@@ -22,8 +22,13 @@ header{
         color: rgb(245, 174, 81);
     }
     .tamaño__imgnav{
-    width: 80px;
-    height: 80px;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 4px;
+    }
+    .containerOrder{
+    display: flex;
+    flex-direction: row;
     }
 }
 ul{
@@ -53,17 +58,15 @@ ul{
         transition: 1s;
     }
     .foto__fabrica{
-        width: 400px;
-        height: 400px;
+        width: 8.5rem;
+        height: 18rem;
         margin: 3px;
     }
     .foto__historiaytips{
     height: 320px;
     width: 320px;
     border: 2px solid rgb(218, 195, 202);
-    display: inline;
-    margin: 12px;
-    padding: 12px;
+    margin: 3px;
     }
     .tamaño__iframe{
         width: 560px;
@@ -91,10 +94,12 @@ form{
     .configuracion__botones{
         padding: 4px;
         margin: 2px;
+        background-color: rgb(255, 232, 127);
+        border: 1px solid rgb(206, 170, 116);
     }
     .tamaño__foto{
-        height: 70px;
-        width: 70px;
+        height: 3.5rem;
+        width: 3.5rem;
         padding: 4px;
         margin: 4px;
     }
@@ -105,6 +110,9 @@ form{
         color: $color__negro;
         height: 1rem;
         font-size: 16px;
+    }
+    .TituloCentrado{
+        text-align: center;
     }
 }
 
@@ -117,11 +125,12 @@ footer{
     .imagenes__footer{
         margin: 4px;
         padding: 4px;
-        width: 60px;
-        height: 60px;
+        width: 3rem;
+        height: 3rem;
     }
     .organizar__footer{
-        display: contents;
+        display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: first baseline;
         padding: 2px;
@@ -132,6 +141,8 @@ footer{
         justify-content: center;
         align-items: center;
         color: rgb(206, 228, 10);
+        margin: 4px;
+        padding: 2px;
     }
     
 }
@@ -140,14 +151,17 @@ footer{
 .footer{
     background-color: rgb(58, 40, 40);
     display:flex;
+    flex-direction: column;
     align-items: center;
-    flex-direction: row;
+    justify-content: center;
 }
 
 $productos:(key1:tostadas-sin-sal, key2:tostadas-salvado, key3:tostadas-multicereal, key4:tostadas-mesa, key5:tostadas-dulces, key6:tostadas-dulce-diet, key7:fajitas-blancas, key8:fajitas-chia, key9:fajitas-lino, key10:fajitas-lino-sinsal, key11:fajitas-multicereal, key12:fajitas-salvado, key13: fajitas-sesamo, key14:bizcochos-salvado-lino, key15:bizcochos-salvado-lino, key16:bizcochos-sin-sal, key17:grisines-blancos, key18:grisines-salvados );
 
 @each $key, $producto in $productos{
     .#{$key}-card {
+        width: 9.5rem;
+        height: 19rem;
         margin: 12px;
         padding: 12px;
         border: 4px solid rgb(255, 202, 202);
@@ -159,17 +173,32 @@ $productos:(key1:tostadas-sin-sal, key2:tostadas-salvado, key3:tostadas-multicer
 @media(max-width: 720px){
 /* responsive */
 
-
     .main{
         display: flex;
         flex-direction: column;
     }
-
 
 .footer{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    footer .organizar__footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(min-width: 721px) and (max-width: 1000px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .organizar__footer{
+        display: flex;
+        flex-direction: row;
     }
 }
